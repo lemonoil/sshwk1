@@ -28,7 +28,7 @@ The IAT of the malware also is not fixed.
 Some of malware has not IAT.
 
 the proba I set is 0.57.
-![](FIGURE/feature_iat.png)
+![](Figure/feature_iat.png)
 ### Detector_PEHeader
 
 The first step is to get the PE header of the malware,
