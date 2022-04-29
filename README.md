@@ -21,17 +21,20 @@ pip install -r requirements.txt
 ## Usage
 
 1. Get Training model:
+
 You can use the default model(`sava_detector_(mode).pkl`) or train your own model.
 ```bash
 python Detect_(mode name).py --malware_paths /path/to/malware/folder --benignware_paths /path/to/benignware/folder
 ```
 2. Get the figure of the training model:
+
 the example is saved in `/Figure`.
 the result_proba can help you to adjust the model.
 ```bash
 python Detect_(mode name).py --malware_paths /path/to/malware/folder --benignware_paths /path/to/benignware/folder --evaluate
 ```
-1. Get the predict result by scanning the file:
+3. Get the predict result by scanning the file:
+
 ```bash
 python Detect_(mode name).py --scan_file_path /path/to/file
 ```
@@ -81,12 +84,10 @@ You can adjust the proba to get the best result.
 
 ## Training Data
 The Normal Data link:
-
-[Normal Data Download](http://lemonoil.top:5333/s/plozwt)
+- [Normal Data Download](http://lemonoil.top:5333/s/plozwt)
 
 The Datacon 2020 Data link:
-
-Email to me. I will send you the link.
+- Email to me. I will send you the link.
 
 ## TODO LIST 
 
