@@ -10,6 +10,35 @@ Your approval is my motivation to improve this project.
 # ML MALWARE DETECTION 101
 
 Put this project in order to learn how to detect malware.
+## Install
+
+ENV: python3
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Get Training model:
+You can use the default model(`sava_detector_(mode).pkl`) or train your own model.
+```bash
+python Detect_(mode name).py --malware_paths /path/to/malware/folder --benignware_paths /path/to/benignware/folder
+```
+2. Get the figure of the training model:
+the example is saved in `/Figure`.
+the result_proba can help you to adjust the model.
+```bash
+python Detect_(mode name).py --malware_paths /path/to/malware/folder --benignware_paths /path/to/benignware/folder --evaluate
+```
+1. Get the predict result by scanning the file:
+```bash
+python Detect_(mode name).py --scan_file_path /path/to/file
+```
+
+## Normal Mode
+
+there are three modes(`strings`,`iat`,`peheader`) to detect malware.
 
 ### Detecor_Strings
 
