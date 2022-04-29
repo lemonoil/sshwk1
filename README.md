@@ -19,6 +19,7 @@ Put this project in order to learn how to detect malware.
 The length of the strings may be huge, so I use the FeatureHasher to hash the strings.
 
 the proba I set is 0.75, which means the file may be a malware if the proba is bigger than 0.75.
+
 ![](Figure/feature_strings.png)
 ### Detector_IAT
   - Extract the import address table from the malware.
@@ -28,6 +29,7 @@ The IAT of the malware also is not fixed.
 Some of malware has not IAT.
 
 the proba I set is 0.57.
+
 ![](Figure/feature_iat.png)
 ### Detector_PEHeader
 
@@ -39,6 +41,7 @@ the vector size (30) is the number of features.
 some malware are not in the training set, which are not pe files.
 
 the proba I set is 0.95.
+
 ![](Figure/feature_peheader.png)
 
 
